@@ -145,7 +145,31 @@ body{
 }
 
 .chat .chat-history .my-message {
+  float: right;
   background: #efefef
+}
+
+.chat .chat-history .other-message{
+
+    float: left;
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: left;
+
+}
+
+.chat .chat-history .other-message:after {
+  border-bottom-color: #e8f1f3;
+  right: 30px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #eff;
+  border-width: 10px;
+  margin-right: -10px;
 }
 
 .chat .chat-history .my-message:after {
@@ -253,4 +277,7 @@ body{
       height: calc(100vh - 350px);
       overflow-x: auto
   }
+
+
+
 }

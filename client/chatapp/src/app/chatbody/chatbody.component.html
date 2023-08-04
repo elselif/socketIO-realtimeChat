@@ -22,22 +22,19 @@
               </div>
               <div class="chat">
 
-                  <div class="chat-history" *ngFor="let item of messageArray" >
+                  <div class="chat-history" *ngFor="let item of messages" [ngClass]="{'my-message': item.user === user, 'other-message': item.user !== user}" >
 
                     <ul class="m-b-0">
                           <li class="clearfix">
-                              
-                              <div class="message other-message float-right"> {{item.message}} </div>
+                              <div class="message other-message float-left"> {{item.message}} </div>
                           </li>
-                          <!-- <li class="clearfix">
-                              <div class="message-data">
-                                  <span class="message-data-time">10:12 AM, Today</span>
-                              </div>
-                              <div class="message my-message">Are we meeting today?</div>
-                          </li> -->
+
 
                       </ul>
                   </div>
+
+
+
                   <div class="chat-message clearfix">
                       <div class="input-group mb-0">
                           <div class="input-group-prepend">
