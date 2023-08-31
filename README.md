@@ -1,7 +1,7 @@
 # Angular Socket.IO Chat Application
 
 This project includes a simple live chat application developed using Angular and Socket.IO. Users can chat in different rooms.
-'[](screenshot-3.png)
+![](screenshot-3.png)
 
 ## Run it on your computer
 
